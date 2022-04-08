@@ -13,6 +13,10 @@ body{
     height: 100vh;
 }
 
+.barCenter{
+    display: flex;
+}
+
 
 .barMain{
     display: flex;
@@ -127,9 +131,7 @@ body{
 }
 
 
-.barCenter{
-    display: flex;
-}
+
 
 /* .panelChange{
     background-color: blue;
@@ -152,16 +154,23 @@ body{
         box-shadow: 1px 0px 10px rgb(122, 122, 122);
         width: 100vw;
         height: 9vh; 
+        z-index: 100;
     }
 
     
     .barTop{
         background-color: white;
-        box-shadow: 0px 1px 10px rgb(122, 122, 122);
+        width: 100vw;
+        height: 5vh;
+    }
+    .barTop ul{
         display: flex;
         justify-content: space-between;
         width: 100vw;
         height: 5vh;
+    }
+    .spaceTop{
+        display: none;
     }
     .logEnterprise{
         flex-grow: 1;
@@ -177,6 +186,11 @@ body{
 
     .mainButton{
         display: none;
+    }
+
+    .barCenter{
+        display: flex;
+        flex-direction: column;
     }
 
 }
