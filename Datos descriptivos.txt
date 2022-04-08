@@ -1,0 +1,50 @@
+Primera simulacion:
+Ingresar pedido:
+	-cliente, productos y sus respectivos precios, moto total.
+	-descuento de la disponibilidad.
+	-cancelar pedido y modificarlo
+Ingresar disponibilidad:
+	-ingresar el producto con su respectiva disponibilidad para cada
+	  uno de los centro disponiblies
+Ingresar cliente:
+	-datos basicos y necesarios.
+	-modificar dichos datos y eliminarlo.
+Ingresar producto
+	-dividirlo en las secciones (especias, sazonador, envaces, agregos)
+	-establecer el precio, con o sin rango.
+	-establecer los datos basicos necesarios.
+	-modificar y eliminar
+Ingresar servicio
+Establecer los respectivos roles.
+	-Yami (Vendedor) Centro de Costo Jua-yam
+	-Juan (Vendedor) Centro de Costo
+Area de oferta.
+
+***********Estableciendo Roles*************
+
+
+Observadores (Area de produccion):
+	Observa los pedidos.
+	Los marca como realizados.
+
+CEO (Centro de Costo)
+	-ingresa costo a los productos.
+	-ingresa precios.
+	-oferta...
+	-Ingresa Disponibilidad.
+
+Gerente de Venta:	
+	--Refleja ingresos o egreso por varios conceptos ajenos a la venta.
+	Establece la existencia real del inventario.
+	
+Punto venta (Acciones): Magda-Yami-Mary-Ana
+	Ingresa pedidos al sistema.
+	Modifica los pedidos del sistema (Cancela, Edita, Entrega).
+	Contabiliza otras formas de ingreso y de egresos.
+	Contabiliza las salidas y entradas de inventario.
+
+
+				
+
+
+
