@@ -25,11 +25,16 @@ body{
         display: flex;
         align-items: center;
         margin-top: 8px;
+        height: 100%;
+        /* border: 1px solid blue; */
     }
 
     .logoEnterprise #logo{
         object-fit: cover;
+        /* height: 150%; */
+        /* width: 150%; */
         margin-left: 20px;
+        z-index: 80;
     }
 
     .logoEnterprise #menuHide{
@@ -146,10 +151,13 @@ body{
         }
         .logoEnterprise #logo{
             /* flex-grow: 1; */
-            margin: 0;
+            /* width: 80%; */
+            margin-top: 10px;
         }
         .logoEnterprise #logo img{
             margin: 0;
+            height: 80%;
+            width: 80%;
         }
 
         .options{
