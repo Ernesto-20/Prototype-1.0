@@ -5,19 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/pushbar.min.css">
     <title>Website</title>
 </head>
 <body>
     <div class="container">
         <div class="barCenter">
             <div class="barMain">
-                <div class="btnShowMenu">
+                <div class="btnShowMenu" data-pushbar-target="contenido">
                     <img src="./assets/images/icon-menu.png" alt="">
+                </div>
+                <div data-pushbar-id = "contenido" data-pushbar-direction="left">
+                    <div class="mainButton" >
+                        <span>Menu de navegacion</span>
+                        <ul>
+                            <li>
+                                <div class="btn">
+                                    <img src="./assets/images/icon-venta.png" alt="" class="iconMain">
+                                    <button>Venta</button>
+                                    <img src="./assets/images/icon-right.png" alt="" class="iconRight">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="btn">
+                                    <img src="./assets/images/icon-client.png" alt="" class="iconMain">
+                                    <button>Cliente</button>
+                                    <img src="./assets/images/icon-right.png" alt="" class="iconRight">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="btn">
+                                    <img src="./assets/images/icon-producto.png" alt="" class="iconMain">
+                                    <button>Producto</button>
+                                    <img src="./assets/images/icon-right.png" alt="" class="iconRight">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="btn">
+                                    <img src="./assets/images/icon-almacen.png" alt="" class="iconMain">
+                                    <button>Almacen</button>
+                                    <img src="./assets/images/icon-right.png" alt="" class="iconRight">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="btn">
+                                    <img src="./assets/images/icon-oferta.png" alt="" class="iconMain">
+                                    <button>Oferta</button>
+                                    <img src="./assets/images/icon-right.png" alt="" class="iconRight">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="btn">
+                                    <img src="./assets/images/icon-usuario.png" alt="" class="iconMain">
+                                    <button>Usuarios</button>
+                                    <img src="./assets/images/icon-right.png" alt="" class="iconRight">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="btn">
+                                    <img src="./assets/images/icon-facturacion.png" alt="" class="iconMain">
+                                    <button>Facturacion</button>
+                                    <img src="./assets/images/icon-right.png" alt="" class="iconRight">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="btn">
+                                    <img src="./assets/images/icon-configuracion.png" alt="" class="iconMain">
+                                    <button>Configuracion</button>
+                                    <img src="./assets/images/icon-right.png" alt="" class="iconRight">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="logEnterprise">
                     <img src="./assets/images/Marca.png" alt="">
                 </div>
-                <div class="mainButton">
+                <div class="mainButton" id="menuHide">
                     <span>Menu de navegacion</span>
                     <ul>
                         <li>
@@ -94,5 +158,12 @@
         <div class="barBottom">       
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+    <script type="text/javascript">
+        const pushbar = new Pushbar({
+              blur:true,
+              overlay:true,
+            });
+      </script>
 </body>
 </html>

@@ -177,14 +177,15 @@ body{
     }
     .btnShowMenu{
         display:flex;
-    }
+    };
+
     .btnShowMenu img{
         height: 50%;
         width: 50%;
         object-fit: cover;
     }
 
-    .mainButton{
+    #menuHide{
         display: none;
     }
 
