@@ -12,76 +12,15 @@
     <div class="container">
         <div class="barCenter">
             <div class="barMain">
-                <div class="btnShowMenu" data-pushbar-target="contenido">
-                    <img src="./assets/images/icon-menu.png" alt="">
+                <div id="desplegate_menu">
+                    <img src="./assets/images/icon-menu.png" alt="" data-pushbar-target="contenido" id="icon_desplegate">
                 </div>
-                <div data-pushbar-id = "contenido" data-pushbar-direction="left">
-                    <div class="mainButton" >
-                        <span>Menu de navegacion</span>
-                        <ul>
-                            <li>
-                                <div class="btn">
-                                    <img src="./assets/images/icon-venta.png" alt="" class="iconMain">
-                                    <button>Venta</button>
-                                    <img src="./assets/images/icon-right.png" alt="" class="iconRight">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="btn">
-                                    <img src="./assets/images/icon-client.png" alt="" class="iconMain">
-                                    <button>Cliente</button>
-                                    <img src="./assets/images/icon-right.png" alt="" class="iconRight">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="btn">
-                                    <img src="./assets/images/icon-producto.png" alt="" class="iconMain">
-                                    <button>Producto</button>
-                                    <img src="./assets/images/icon-right.png" alt="" class="iconRight">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="btn">
-                                    <img src="./assets/images/icon-almacen.png" alt="" class="iconMain">
-                                    <button>Almacen</button>
-                                    <img src="./assets/images/icon-right.png" alt="" class="iconRight">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="btn">
-                                    <img src="./assets/images/icon-oferta.png" alt="" class="iconMain">
-                                    <button>Oferta</button>
-                                    <img src="./assets/images/icon-right.png" alt="" class="iconRight">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="btn">
-                                    <img src="./assets/images/icon-usuario.png" alt="" class="iconMain">
-                                    <button>Usuarios</button>
-                                    <img src="./assets/images/icon-right.png" alt="" class="iconRight">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="btn">
-                                    <img src="./assets/images/icon-facturacion.png" alt="" class="iconMain">
-                                    <button>Facturacion</button>
-                                    <img src="./assets/images/icon-right.png" alt="" class="iconRight">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="btn">
-                                    <img src="./assets/images/icon-configuracion.png" alt="" class="iconMain">
-                                    <button>Configuracion</button>
-                                    <img src="./assets/images/icon-right.png" alt="" class="iconRight">
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                <div data-pushbar-id = "contenido" data-pushbar-direction="left" id="menuHide">
                 </div>
                 <div class="logEnterprise">
                     <img src="./assets/images/Marca.png" alt="">
                 </div>
-                <div class="mainButton" id="menuHide">
+                <div class="mainButton" id="menu">
                     <span>Menu de navegacion</span>
                     <ul>
                         <li>
@@ -165,5 +104,6 @@
               overlay:true,
             });
       </script>
+      <script src="./assets/js/controller.js"></script>
 </body>
 </html>

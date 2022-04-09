@@ -162,6 +162,8 @@ body{
         background-color: white;
         width: 100vw;
         height: 5vh;
+        /* OjO */
+        /* display: none; */
     }
     .barTop ul{
         display: flex;
@@ -172,26 +174,47 @@ body{
     .spaceTop{
         display: none;
     }
-    .logEnterprise{
-        flex-grow: 1;
+    #desplegate_menu{
+        display:inline;
     }
-    .btnShowMenu{
-        display:flex;
-    };
-
-    .btnShowMenu img{
-        height: 50%;
+    #desplegate_menu img{
+        height: 40%;
         width: 50%;
         object-fit: cover;
+        padding: 0;
     }
 
-    #menuHide{
-        display: none;
+    .logEnterprise{
+        flex-grow: 1;
+        margin: 0;
     }
 
     .barCenter{
         display: flex;
         flex-direction: column;
     }
+
+    #menu{
+        display: none;
+    }
+    #menuHide{
+        display: flex;
+        flex-direction: column;
+    }
+    #menuHide .btn button{
+    width: 60%;
+    border: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    color: #848484;
+    font-size: 15px;
+    text-align: left;
+    flex-grow: 2;
+}
+
+    #menuHiden .btn:hover{
+    background: linear-gradient(to left, #01da42, #00FF4C);
+    color:white;
+    transition: all .7s; 
+}
 
 }
