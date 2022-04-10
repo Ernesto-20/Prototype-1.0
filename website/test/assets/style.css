@@ -75,7 +75,7 @@ body{
     .mainsBTN{
         width: 90%;
         margin-left: 5%;
-        margin-top: 10px;
+        /* margin-top: 10px; */
         height: 40px;
         background-color: white;
         border-radius: 12px;
@@ -103,10 +103,10 @@ body{
         flex-grow: 1;
     }
     .iconRight{
-        height:20%;
+        height:30%;
         /* width: 25%; */
         object-fit: cover;
-        object-position: 50% 45%;
+        object-position: 50% 46%;
         flex-grow: 1;
         /* border: 1px solid red; */
         padding-right: 5px;
@@ -124,6 +124,32 @@ body{
         background: linear-gradient(to left, #01da42, #00FF4C);
         color:white;
         transition: all .7s; 
+    }
+
+    .subMenu{
+        display: flex;
+        flex-direction: column;
+        height: 0px;
+    }
+    .item{
+        display: flex;
+        align-items: center;
+        padding-left: 17%;
+        padding-top: 8px;
+    }
+    .item button{
+        background-color: white;
+        border: 0px;
+        color: #848484;
+        font-size: 13px;
+    }
+
+    .item:hover > button{
+        color: #01da42;
+    }
+    .item:hover > img{
+        content: url("./images/Línea-1.png");
+        object-fit: cover;
     }
 
 
