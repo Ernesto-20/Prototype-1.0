@@ -34,7 +34,7 @@ body{
         /* height: 150%; */
         /* width: 150%; */
         margin-left: 20px;
-        z-index: 80;
+        z-index: 1000;
     }
     .logoEnterprise #logo img{
         height: 60%;
@@ -276,7 +276,7 @@ body{
         width: 90%;
         margin-top: 20px;
         position:relative;
-        z-index: 1000;
+        z-index: 9;
     }
     .headerList ul{
         display: flex;
@@ -413,6 +413,7 @@ body{
     /* Navegation */
         .navegation{
             position: absolute;
+            z-index: 10;
             left: -65vw;
             width: 65vw;
         }
