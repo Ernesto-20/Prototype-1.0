@@ -38,19 +38,19 @@
                 <div class="subMenu" id="sub-venta">
                     <div class="item">                  
                         <img src="./assets/images/Línea-2.png" alt="">
-                        <button>En proceso</button>
+                        <a href="#">En proceso</a>
                     </div>
                     <div class="item">
                         <img src="./assets/images/Línea-2.png" alt="">
-                        <button>Realizadas</button>
+                        <a href="#">Realizadas</a>
                     </div>
                     <div class="item">
                         <img src="./assets/images/Línea-2.png" alt="">
-                        <button>Canceladas</button>
+                        <a href="#">Canceladas</a>
                     </div>
                     <div class="item">
                         <img src="./assets/images/Línea-2.png" alt="">
-                        <button>Nueva Venta</button>
+                        <a href="#">Nueva Venta</a>
                     </div>
                 </div>
             <div class="mainsBTN" id="clientBTN">
@@ -84,7 +84,125 @@
                 <img src="./assets/images/icon-right.png" alt="" class="iconRight">
             </div>
         </nav>
-        
+        <!-- Vista nuevo Pedido -->
+        <div class="areaOperation">
+            <div class="upperSection">
+                <h2 id="titleOperation">Creando un nuevo pedido</h2>
+            </div>
+            <div class="centerSection">
+                <form>
+                    <div class="info dataOrder">
+                        <h4>Datos del pedido</h4>
+                        <input type="search" placeholder="Nombre del Cliente"/ autocomplete="on">
+                        <input type="search" placeholder="Centro de Costo Encargado" autocomplete="on"/>
+                    </div>
+                    <div class="product">
+                        <div class="info productSearch">
+                            <h4>Producto</h4>
+                            <input type="search" placeholder="Buscar por nombre o codigo" autocomplete="on" id="inputProduct"/>
+                        </div>
+                        <div class="info Amount">
+                            <h4>Cantidad</h4>
+                            <input type="number" placeholder="0.0"/>
+                        </div>
+                        <!-- <div class="contanerAdd"> -->
+                            <!-- <input type="submit" value="Agregar a la lista" id="addOrder"/> -->
+                        <!-- </div> -->
+                    </div>
+                    <div class="mixture">
+                        <div class="info mixtureSearch">
+                            <h5>Mezcla</h5>
+                            <input type="search" placeholder="Buscar..." autocomplete="on"/>
+                        </div>
+                        <div class="info Amount">
+                            <h5>Cantidad</h5>
+                            <input type="number" placeholder="0.0"/>
+                        </div>
+                    </div>
+                    <input type="submit" value="Agregar a la lista" id="addOrder" />
+                </form>
+                <div class="listOrders">
+                    <div class="headerList">
+                        <ul>
+                            <li><a href="#">Producto</a></li>
+                            <li><a href="#">Codigo</a></li>
+                            <li><a href="#">Cantidad</a></li>
+                            <li><a href="#">Precio</a></li>
+                            <li><a href="#">SubTotal</a></li>
+                        </ul>
+                    </div>
+                    <div class="orders">
+                        <div class="numberOrder">
+                            <ul>
+                                <li>
+                                    <div class="item_order">
+                                        <a href="#">Comino Molido</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item_order">
+                                        <a href="#">com</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item_order">
+                                        <!-- <img src="" alt=""> -->
+                                        <input type="number" value="5"/>
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item_order">
+                                            <input type="number" value="330.0">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item_order">
+                                        <span>1650.0</span>
+                                        <img src="./assets/images/icon-remove.png" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="numberOrder">
+                            <ul>
+                                <li>
+                                    <div class="item_order">
+                                        <a href="#">Laurel en hojas</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item_order">
+                                        <a href="#">lh</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item_order">
+                                        <!-- <img src="" alt=""> -->
+                                        <input type="number" value="2"/>
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item_order">
+                                            <input type="number" value="500.0">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item_order">
+                                        <span>1000.0</span>
+                                        <img src="./assets/images/icon-remove.png" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rightSection">
+                
+        </div>
     </div>
 
     <script src="./assets/controller.js"></script>
