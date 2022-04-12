@@ -474,9 +474,6 @@ body{
         .Amount{
             width: 30%;
         }
-        .listOrders{
-            display: none;
-        }
         .mixture{
             padding-bottom: 5px;
             border-bottom: 1px solid gray;
@@ -487,9 +484,57 @@ body{
         }
 
         #addOrder{
-            /* margin-top: 0; */
+            margin-top: 10px;
+            margin-left: 20px;
             background-color: #01da42;
         }
-        
+
+        .listOrders{
+            width: 100vw;
+            margin-top: 10px;
+        }
+
+        .headerList{
+            width: 100%;
+            margin: 0;
+        }
+        .headerList ul li{
+            /* background-color: red; */
+            padding: 0;
+            margin: 0;
+            width: 25%;
+            height: 20px;
+        }
+        .hide_column{
+            display: none;
+        }
+        .headerList ul li a{
+            font-size: 9px;
+            /* padding-left: 5px; */
+        }
+        .numberOrder ul{
+            width: 100vw;
+        }
+        .numberOrder ul li{
+            width: 25%;
+            /* padding-left: 5px; */
+            /* background-color: #01da42; */
+        }
+
+        #sell{
+            color: white;
+            background-color: #01da42;
+
+            text-align: center;
+            padding: 7.5px 20px 7.5px 20px;
+            border:0px;
+            border-radius: 7.5px;
+            font-weight: bold;
+            height: 35px;
+            margin-top:20px;
+            margin-left: 25px;
+            box-shadow: 1px 2px 5px rgb(122, 122, 122);
+            display: none;
+        }
         
     }
