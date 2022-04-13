@@ -93,8 +93,8 @@
                 <form>
                     <div class="info dataOrder">
                         <h4>Datos del pedido</h4>
-                        <input type="search" placeholder="Nombre del Cliente"/ autocomplete="on">
-                        <input type="search" placeholder="Centro de Costo Encargado" autocomplete="on"/>
+                        <input type="search" placeholder="Nombre del Cliente"/ autocomplete="on" id="inputClient" />
+                        <input type="search" placeholder="Centro de Costo Encargado" autocomplete="on" id="inputCentroCosto"/>
                     </div>
                     <div class="product">
                         <div class="info productSearch">
@@ -103,7 +103,7 @@
                         </div>
                         <div class="info Amount">
                             <h4>Cantidad</h4>
-                            <input type="number" placeholder="0.0"/>
+                            <input type="number" placeholder="0.0" id="inputAmountProduct"/>
                         </div>
                         <!-- <div class="contanerAdd"> -->
                             <!-- <input type="submit" value="Agregar a la lista" id="addOrder"/> -->
@@ -112,14 +112,14 @@
                     <div class="mixture">
                         <div class="info mixtureSearch">
                             <h5>Mezcla</h5>
-                            <input type="search" placeholder="Buscar..." autocomplete="on"/>
+                            <input type="search" placeholder="Buscar..." autocomplete="on" id="inputMixture"/>
                         </div>
                         <div class="info Amount">
                             <h5>Cantidad</h5>
-                            <input type="number" placeholder="0.0"/>
+                            <input type="number" placeholder="0.0" id="inputAmountMixture"/>
                         </div>
                     </div>
-                    <input type="submit" value="Agregar a la lista" id="addOrder" />
+                    <button type="button" id="addOrder">Agregar a la lista</button>
                 </form>
                 <div class="listOrders">
                     <div class="headerList">
@@ -131,7 +131,7 @@
                             <li><a href="#">SubTotal</a></li>
                         </ul>
                     </div>
-                    <div class="orders">
+                    <div class="orders" id="orders">
                         <div class="numberOrder">
                             <ul>
                                 <li class="hide_column">
@@ -159,46 +159,14 @@
                                 <li>
                                     <div class="item_order">
                                         <span>1650.0</span>
-                                        <img src="./assets/images/icon-remove.png" alt="">
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="numberOrder">
-                            <ul>
-                                <li class="hide_column">
-                                    <div class="item_order">
-                                        <a href="#">Laurel en hojas</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="item_order">
-                                        <a href="#">lh</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="item_order">
-                                        <!-- <img src="" alt=""> -->
-                                        <input type="number" value="2"/>
-                                        <!-- <img src="" alt=""> -->
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="item_order">
-                                            <input type="number" value="500.0">
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="item_order">
-                                        <span>1000.0</span>
-                                        <img src="./assets/images/icon-remove.png" alt="">
+                                        <img src="./assets/images/icon-remove.png" alt="" id="remove_product">
                                     </div>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <input type="submit" value="Vender" id="sell" />
+                <button type="button" id="sell">Vender</button>
             </div>
         </div>
         <div class="rightSection">

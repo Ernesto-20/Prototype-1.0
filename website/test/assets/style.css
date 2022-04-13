@@ -182,8 +182,11 @@ body{
         font-weight: bold;
     }
     .centerSection{
-        height: 80%;
+        height: 90%;
         padding-left: 10%;
+    }
+    form{
+        height: 45%;
     }
     .info{
         display: flex;
@@ -213,10 +216,8 @@ body{
     .dataOrder input{
         width: 30%;
     }
-    .product, .mixture{
-        display: flex;
-    }
     .product{
+        display: flex;
         width: 80%;
     }
     .productSearch{
@@ -225,6 +226,7 @@ body{
     }
     .mixture{
         width: 58%;
+        display: none;
         /* margin-left: 5%; */
     }
     .mixtureSearch{
@@ -264,17 +266,18 @@ body{
         font-size: 13px;
     }
 
-    .listOrder{
-        background-color: #707070;
+    .listOrders{
         display: flex;
+        flex-direction: column;
         width: 100%;
+        height: 45%;        
     }
     .headerList{
         background-color: white;
         box-shadow: 1px 2px 10px rgb(184, 184, 184);
         height: 40px;
         width: 90%;
-        margin-top: 20px;
+        margin-top: 0px;
         position:relative;
         z-index: 9;
     }
@@ -300,11 +303,12 @@ body{
 
     /* View orders */
     .orders{
-        height: 100%;
+        height: calc(100% - 40px);
         width: 90%;
-        margin-top: 0px;
-        background-color: white;
-        /* z-index: 102; */
+        overflow-y:auto;
+    }
+    .numberOrder:nth-child(even){
+        background-color: #E4E9E5;
     }
     .numberOrder {
         border-bottom: 1px solid rgb(168, 168, 168);
@@ -330,9 +334,11 @@ body{
         object-fit: cover;
         height: 17%;
         width: 17%;
+        margin-right: 10px;
     }
     .item_order{
         display: flex;
+        justify-content: space-between;
         align-items: center;
         padding-left: 17%;
         padding-top: 8px;
@@ -344,6 +350,7 @@ body{
         color: #848484;
         font-size: 13px;
     }
+
     .numberOrder ul li input{
         display: inline-block;
         padding-left: 5%;
@@ -367,7 +374,20 @@ body{
         box-shadow: 1px 15px 10px rgb(122, 122, 122);
     }
 
-
+    #sell{
+            display: none;
+            color: white;
+            background-color: #01da42;
+            text-align: center;
+            padding: 7.5px 20px 7.5px 20px;
+            border:0px;
+            border-radius: 7.5px;
+            font-weight: bold;
+            height: 35px;
+            margin-top:2px;
+            margin-left: 25px;
+            box-shadow: 1px 2px 5px rgb(122, 122, 122);
+    }
 
     /* Responive Web adapting movile */
     @media screen and (max-width: 768px) {
@@ -487,12 +507,12 @@ body{
         #addOrder{
             margin-top: 10px;
             margin-left: 20px;
-            background-color: #01da42;
+            background-color:#707070;
         }
 
         .listOrders{
             width: 100vw;
-            margin-top: 10px;
+            /* margin-top: 10px; */
         }
 
         .headerList{
@@ -513,6 +533,10 @@ body{
             font-size: 9px;
             /* padding-left: 5px; */
         }
+
+        .orders{
+            width: 100%;
+        }
         .numberOrder ul{
             width: 100vw;
         }
@@ -520,22 +544,5 @@ body{
             width: 25%;
             /* padding-left: 5px; */
             /* background-color: #01da42; */
-        }
-
-        #sell{
-            color: white;
-            background-color: #01da42;
-
-            text-align: center;
-            padding: 7.5px 20px 7.5px 20px;
-            border:0px;
-            border-radius: 7.5px;
-            font-weight: bold;
-            height: 35px;
-            margin-top:20px;
-            margin-left: 25px;
-            box-shadow: 1px 2px 5px rgb(122, 122, 122);
-            display: none;
-        }
-        
+        }        
     }
